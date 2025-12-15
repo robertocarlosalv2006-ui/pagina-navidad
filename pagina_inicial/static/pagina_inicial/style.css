@@ -1,0 +1,64 @@
+@keyframes caer {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+
+body {
+    background-color: grey;
+}
+.carta_navidad {
+    background-color: green;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    padding: 15px;
+    cursor: pointer;
+}
+.encabezado {
+    background-color: brown;
+    text-align: center;
+    padding: 8px;
+    letter-spacing: 2px;
+    margin: 0;
+    width: 100%; /* Hace que el encabezado ocupe todo el ancho */
+    position: absolute; /* Asegura que se quede en la parte superior */
+    top: 0; /* Asegura que se quede en la parte superior de la página */
+    left: 0; /* Asegura que se quede pegado al lado izquierdo */
+}
+.img_cara_papanoel {
+    width: 180px;
+    height: 270px;
+    top: 100px;
+    left: 60px;
+    position: absolute;
+}
+.imag_reno {
+    width: 180px;
+    height: 270px;
+    top: 100px;
+    right: 60px;
+    position: absolute;
+}
+.copo {
+    position: fixed;
+    top: -10px;
+    background: white;
+    border-radius: 50%;
+    animation: caer linear infinite;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.mensaje {
+    color: black;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Navidad llego</title>
+    <link rel="stylesheet" href="{% static 'pagina_inicial/style.css' %}">
+ 
+</head>
+
+<body>
+    <script src="{% static 'pagina_inicial/js/script.js' %}"></script>
+    <div class="encabezado">
+        <h1>NAVIDAD ESTA AQUI</h1>
+    </div>
+
+    <div class="carta_navidad" id="cartanavidad">
+        ¡Carta de papa noel!
+    </div>
+    <p class="mensaje">Querido santa le pido que tenga una buena navidad y gracias por cualquier cosa que me de 😊😊</p>
+    <img src="{% static 'pagina_inicial/papanoel.png'%}" alt="perfil" class="img_cara_papanoel">
+    <img src="{% static 'pagina_inicial/reno.png'%}" alt="hola" class="imag_reno">
+    
+
+    <script>
+        for (let i = 0; i < 50; i++) {
+            let copo = document.createElement("div");
+            copo.classList.add("copo");
+            document.body.appendChild(copo);
+        }
+    </script>
+
+</body>
